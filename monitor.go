@@ -30,7 +30,6 @@ func main() {
 		case 2:
 			displayLogs()
 		case 0:
-			fmt.Println("Exiting program")
 			os.Exit(0)
 		default:
 			fmt.Println("Unknown command")
@@ -51,7 +50,6 @@ func monitor() {
 		time.Sleep(delay)
 		fmt.Println("")
 	}
-
 	fmt.Println("")
 }
 
@@ -88,7 +86,6 @@ func readWebsites() []string {
 		line = strings.TrimSpace(line)
 		websites = append(websites, line)
 	}
-
 	file.Close()
 	return websites
 }
